@@ -1,0 +1,51 @@
+nav, #search-content, .footer-text {
+    font-family: Aladin;
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    font-family: "Marck Script";
+    font-size: 4em;
+    margin: 150px;
+}
+
+nav {
+    font-size: 3.5em;
+}
+
+#search-content {
+    background-image: url("../img/poppy.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    font-size: 1.5em;
+}
+
+#search-btn {
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 5px 15px;
+    background-color: #CD567C;
+    color: white;
+}
+
+#numberError, #searchError {
+    background-color: white;
+    border-radius: 10px;
+}
+
+img {
+    padding: 15px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-text {
+    padding: 30px 10px;
+}
