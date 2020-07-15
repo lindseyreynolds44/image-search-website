@@ -17,7 +17,7 @@ $(document).ready(function(){
             numPhotos = 10;
             $("#num-photos").val(20);
             $("#numberError").html("Cannot be more than 20");
-        // Reset the page without an error
+        // Reset the page without an error message
         } else {
             $("#numberError").html("");
         }
@@ -28,7 +28,9 @@ $(document).ready(function(){
     $("#search-btn").on("click", function() {
         if(validInput()){
             $("h1").html("");
-            let searchTerm = $("#search-text").val().trim();
+            let searchTerm = $("#search-text").val().trim;
+            
+            // Retrieve images using ajax
             $.ajax({
                 method: "GET",
                 url: pixURL + "?key=" + key + "&q=" + searchTerm,
