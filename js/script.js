@@ -14,7 +14,7 @@ $(document).ready(function(){
             $("#numberError").html("Must be at least 1");
         // Do no allow numbers greater than 20
         } else if(numPhotos > 20){
-            numPhotos = 10;
+            numPhotos = 20;
             $("#num-photos").val(20);
             $("#numberError").html("Cannot be more than 20");
         // Reset the page without an error message
@@ -27,8 +27,7 @@ $(document).ready(function(){
     // Display photos based on the user's search
     $("#search-btn").on("click", function() {
         if(validInput()){
-            $("h1").html("");
-            let searchTerm = $("#search-text").val().trim;
+            let searchTerm = $("#search-text").val().trim();
             
             // Retrieve images using ajax
             $.ajax({
@@ -52,11 +51,10 @@ $(document).ready(function(){
         if($("#search-text").val() == ""){
             $("#searchError").html("Please enter a key word");
             $("#searchError").css("background-color","white");
-            $("#output").html("");
+            $("#output").html("What would you like to see?");
             return false;
         } else {
             $("#searchError").html("");
-            
         }
         return true;
     }//valid input

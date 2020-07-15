@@ -6,7 +6,7 @@ body {
     text-align: center;
 }
 
-h1 {
+#output {
     font-family: "Marck Script";
     font-size: 4em;
     margin: 150px;
